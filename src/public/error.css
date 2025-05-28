@@ -1,0 +1,82 @@
+/* error */
+.error-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 45rem;
+  background: url("blog-images/1815.jpg");
+  color: var(--white-color);
+}
+
+.error-header h1 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  display: block;
+}
+.error-header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+}
+
+.error-header ul li {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--white-color-2);
+}
+.error-header ul li a {
+  text-decoration: none;
+  color: var(--white-color-2);
+  transition: all 0.3s ease-in-out;
+}
+.error-header ul li a:hover {
+  color: var(--orange-color);
+  transform: scale(1.1);
+}
+.error-header ul li a:visited {
+  color: var(--white-color-2);
+}
+.error-header ul li a.active {
+  color: var(--orange-color);
+  transform: scale(1.1);
+}
+
+.error-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.error-img {
+  width: 40%;
+  height: 41rem;
+}
+
+.error-title {
+  margin-top: 2rem;
+  font-size: 4.8rem;
+  font-weight: 800;
+}
+.error-desc {
+}
+
+.error-link {
+  display: inline-block;
+  padding: 2rem;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.error-link:hover {
+  background-color: var(--secondary-color-1);
+}

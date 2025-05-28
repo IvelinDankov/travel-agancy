@@ -9,5 +9,8 @@ homeController.get("/", (req, res) => {
 homeController.get("/contact", (req, res) => {
   res.render("contact");
 });
+homeController.get("/about", (req, res) => {
+  res.render("about");
+});
 
 export default homeController;

@@ -11,4 +11,8 @@ routes.use(blogController);
 routes.use(destinationController);
 routes.use(authController);
 
+routes.use((req, res, next) => {
+  res.status(404).render("error");
+});
+
 export default routes;

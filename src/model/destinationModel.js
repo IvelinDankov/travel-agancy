@@ -9,6 +9,12 @@ const DestinationsSchema = new Schema({
     type: String,
     required: true,
   },
+  rating: {
+    type: String,
+  },
+  reviews: {
+    type: Number,
+  },
   description: {
     type: String,
     required: true,
