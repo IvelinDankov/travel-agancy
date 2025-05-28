@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog Details</title>
+</head>
+
+<body>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="stylesheet" href="blog-details.css" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </head>
+  <header class="header">
+    <p class="logo">Triptopia</p>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="nav-link" href="/Home/Home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/blog/blog.html">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/Destination/destination.html">Destination</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Pages</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="btn cta-btn">Book trip</button>
+  </header>
+  <main>
+    <section class="blog-header">
+      <h1 class="blog-title">Blog</h1>
+      <ul>
+        <li><a href="/Home/Home.html">Home</a></li>
+        &bull;
+        <li><a href="/blog/blog.html" class="active">Blog Details</a></li>
+      </ul>
+    </section>
+
+    <section class="blog-content">
+      <div class="container blog-container">
+        <div class="blog-content-list">
+          <div class="blog-content-item">
+            <img class="blog-content-item-image" src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0"
+              alt="" />
+            <div class="blog-content-item-info">
+              <h2 class="blog-title-text">
+                Anatolian Adventure: Off-the-Beaten-Path Discoveries in
+                Turkey's Heartland
+              </h2>
+              <p class="blog-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum rem totam,
+                explicabo quia perferendis facere. Quidem odit quis nobis, minus quos doloremque omnis soluta veritatis
+                nostrum commodi! Delectus repellendus blanditiis ipsa nostrum vel natus repellat modi consequuntur.
+                Officiis placeat beatae expedita aspernatur ipsum nihil sunt quidem, natus accusantium ex. Non quam nam
+                dolores molestias? Aperiam illum voluptatem ipsam cumque molestiae aliquid ut, impedit, dolor doloremque
+                fugiat expedita debitis perferendis provident dolorem, temporibus accusantium possimus ex quisquam
+                blanditiis excepturi mollitia esse minus? Dignissimos, eum aliquam ex dolorem harum architecto fuga
+                mollitia tempora? Minima, voluptates cupiditate consequatur nobis labore itaque aut aliquid.</p>
+              <p class="blog-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum rem totam,
+                explicabo quia perferendis facere. Quidem odit quis nobis, minus quos doloremque omnis soluta veritatis
+                nostrum commodi! Delectus repellendus blanditiis ipsa nostrum vel natus repellat modi consequuntur.
+                Officiis placeat beatae expedita aspernatur ipsum nihil sunt quidem, natus accusantium ex. Non quam nam
+                dolores molestias? Aperiam illum voluptatem ipsam cumque molestiae aliquid ut, impedit, dolor doloremque
+                fugiat expedita debitis perferendis provident dolorem, temporibus accusantium possimus ex quisquam
+                blanditiis excepturi mollitia esse minus? Dignissimos, eum aliquam ex dolorem harum architecto fuga
+                mollitia tempora? Minima, voluptates cupiditate consequatur nobis labore itaque aut aliquid.</p>
+
+
+              <ul class="blog-comments">
+                <li>
+                  <img class="blog-comments-image" src="./blog-images/team-1.jpg" alt="avatar image">
+                  <div class="blog-comments-info">
+                    <h3 class="blog-comments-name">John Doe</h3>
+                    <p class="blog-comments-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Repudiandae, cumque.
+                    </p>
+                    <div class="blog-comments-info-item">
+                      <span class="blog-comments-date">12 Jan 2023</span>
+                      <button class="btn btn-reply">Reply</button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="blog-comments-form">
+                <h3 class="blog-comments-form-title">Leave a Comment</h3>
+                <form action="">
+                  <input type="text" placeholder="Name" class="blog-comments-input" />
+                  <input type="email" placeholder="Email" class="blog-comments-input" />
+                  <textarea name="" id="" cols="30" rows="10" placeholder="Comment"
+                    class="blog-comments-textarea"></textarea>
+                  <button type="submit" class="btn btn-comment">Post Comment</button>
+                </form>   
+              </div>
+
+            </div>
+
+
+
+          </div>
+        </div>
+        <div class="blog-info-list">
+          <form action="">
+            <input type="text" placeholder="Search..." class="search-input" />
+            <button type="submit" class="search-btn">
+              <ion-icon name="search-outline"></ion-icon>
+            </button>
+          </form>
+          <div class="blog-info-item">
+            <h3 class="blog-info-title">Categories</h3>
+            <ul class="blog-info-list-item">
+              <li><a href="#">Adventure</a></li>
+              <li><a href="#">Travel</a></li>
+              <li><a href="#">Lifestyle</a></li>
+              <li><a href="#">Food</a></li>
+              <li><a href="#">Culture</a></li>
+            </ul>
+          </div>
+          <div class="blog-info-item">
+            <h3 class="blog-info-title">Recent Posts</h3>
+            <ul class="blog-info-list-item">
+              <li><a href="#">Exploring the Hidden Gems of Istanbul</a></li>
+              <li><a href="#">A Culinary Journey Through Turkey</a></li>
+              <li><a href="#">The Best Hiking Trails in Cappadocia</a></li>
+              <li>
+                <a href="#">Discovering the Ancient Ruins of Ephesus</a>
+              </li>
+              <li><a href="#">A Guide to Turkish Cuisine</a></li>
+            </ul>
+          </div>
+
+          <div class="tags">
+            <h3 class="blog-info-title">Tags</h3>
+            <ul class="tags-list">
+              <li><a href="#">Food</a></li>
+              <li><a href="#">Fresh</a></li>
+              <li><a href="#">Organic</a></li>
+              <li><a href="#">Vegetable</a></li>
+              <li><a href="#">Harvest</a></li>
+            </ul>
+          </div>
+
+          <div class="advertisment">
+            <div class="advartisment-content">
+              <h3 class="blog-info-title">Advertisment</h3>
+              <p class="advertisment-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae, cumque.
+              </p>
+              <button class="btn btn-advs">Go there</button>
+            </div>
+            <img src="./blog-images/advs-image.jpg" alt="" class="advertisment-img" />
+          </div>
+
+          <div class="newsletter">
+            <h3 class="blog-info-title">Newsletter</h3>
+            <p class="newsletter-text">
+              Subscribe to our newsletter and get the latest updates.
+              <br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <form action="">
+              <input type="email" placeholder="Enter your email" class="newsletter-input" />
+              <button type="submit" class="btn btn-newsletter">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

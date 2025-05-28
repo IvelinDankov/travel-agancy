@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+
+  <body>
+    <section class="checkout">
+      <div class="container checkout-container">
+        <div class="form-box">
+          <h2 class="checkout-heading">Confirm and Pay</h2>
+
+          <hr />
+
+          <div class="checkout-title">
+            <span>1</span>
+            <h5>Shipping information</h5>
+          </div>
+          <form action="">
+            <h4 class="checkout-form-title">Billing Address</h4>
+            <div class="form-group">
+              <input type="text" placeholder="First Name" />
+              <input type="text" placeholder="Last Name" />
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Full Address" />
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Full Address (optional)" />
+            </div>
+            <h4>Shipping Address</h4>
+            <div class="form-group">
+              <input type="text" placeholder="First Name" />
+              <input type="text" placeholder="Last Name" />
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Full Address" />
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Full Address (optional)" />
+            </div>
+
+            <hr />
+
+            <div class="checkout-title">
+              <span>2</span>
+              <h5>Payment Methods</h5>
+            </div>
+
+            <div class="form-group-payment">
+              <input type="radio" id="payment" id="paypal" name='payment'/>
+              <label for="">Pay with Paypal</label>
+              <p>
+                You will be redirected to PayPal website to complete your
+                purchasec securely.
+              </p>
+            </div>
+            <div class="form-group-payment-cart">
+              <input type="radio" id="cart"  name='payment'/>
+              <label for="">Credit/Debit Car</label>
+              <p>We support Mastercard, Visa, Discover and Stripe.</p>
+              <ul>
+                <li>
+                  <div class="form-group form-group-cart">
+                    <label for="">Card Number</label>
+                    <input type="number" placeholder="XXXX XXXX XXXX XXXX" />
+                  </div>
+                  <div class="form-group form-group-cart">
+                    <label for="">Card Holder</label>
+                    <input type="text" placeholder="Peter Parker" />
+                  </div>
+                  <div class="form-group form-group-cart">
+                    <label for="">Expiration Date</label>
+                    <input type="text" placeholder="MM/YY" />
+                    <label for="">CVC</label>
+                    <input
+                      type="number"
+                      minlength="3"
+                      maxlength="3"
+                      placeholder="***"
+                      />
+                  </div>
+                </li>
+              </ul>
+            </div>
+            
+          </div>
+          
+          <div class="checkout-summary">
+            <div class="summary-cart">
+            <div class="checkout-title">
+              <span>3</span>
+              <h5>Order Summary</h5>
+            </div>
+
+            <div class="order-info">
+              <img
+                class="order-info-image"
+                src="./checkout-images/sign-up-img.png"
+                alt=""
+              />
+              <div class="order-info-text">
+
+                <h4>Title</h4>
+                <div class="rating"><i></i> 5.0 (234 views)</div>
+              </div>
+            </div>
+
+            <div class="order-charge">
+              <div class="order-wrapper">
+                <p>Service Charge</p>
+                <p>$ 20.00</p>
+              </div>
+              <div class="order-wrapper">
+                <p>Discount</p>
+                <p>Free</p>
+              </div>
+            </div>
+            
+            <div class="order-total">
+              <p class="total">Total</p>
+              <p class="total-amount">$ 20.00</p>
+            </div>
+            
+            <button class="complete-btn">Complete Booking</button>
+          </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

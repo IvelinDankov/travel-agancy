@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="stylesheet" href="blog.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <p class="logo">Triptopia</p>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="/Home/Home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog/blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Destination/destination-details.html">Destination</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Pages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="btn cta-btn">Book trip</button>
+    </header>
+    <main>
+      <section class="blog-header">
+        <h1 class="blog-title">Blog</h1>
+        <ul>
+          <li><a href="/Home/Home.html">Home</a></li>
+          &bull;
+          <li><a href="/blog/blog.html" class="active">Blog</a></li>
+        </ul>
+      </section>
+
+      <section class="blog-content">
+        <div class="container blog-container">
+          <div class="blog-content-list">
+            <div class="blog-content-item">
+              <img
+                src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0"
+                alt=""
+              />
+              <div class="blog-content-item-info">
+                <h2 class="blog-title-text">
+                  Anatolian Adventure: Off-the-Beaten-Path Discoveries in
+                  Turkey's Heartland
+                </h2>
+                <p class="blog-description">Lorem ipsum dolor sit amet.</p>
+                <div class="blog-info">
+                  <div class="blog-info-item">
+                    <ion-icon name="person-outline"></ion-icon>
+                    <span>Author Name</span>
+                  </div>
+                  <div class="blog-info-item">
+                    <ion-icon name="calendar-outline"></ion-icon>
+                    <span>Published Date</span>
+                  </div>
+                  <div class="blog-info-item">
+                    <ion-icon name="chatbubble-outline"></ion-icon>
+                    <span>Comments</span>
+                  </div>
+                  <a href="./blog-details.html" class="btn btn-blog">Read more..</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="blog-info-list">
+            <form action="">
+              <input type="text" placeholder="Search..." class="search-input" />
+              <button type="submit" class="search-btn">
+                <ion-icon name="search-outline"></ion-icon>
+              </button>
+            </form>
+            <div class="blog-info-item">
+              <h3 class="blog-info-title">Categories</h3>
+              <ul class="blog-info-list-item">
+                <li><a href="#">Adventure</a></li>
+                <li><a href="#">Travel</a></li>
+                <li><a href="#">Lifestyle</a></li>
+                <li><a href="#">Food</a></li>
+                <li><a href="#">Culture</a></li>
+              </ul>
+            </div>
+            <div class="blog-info-item">
+              <h3 class="blog-info-title">Recent Posts</h3>
+              <ul class="blog-info-list-item">
+                <li><a href="#">Exploring the Hidden Gems of Istanbul</a></li>
+                <li><a href="#">A Culinary Journey Through Turkey</a></li>
+                <li><a href="#">The Best Hiking Trails in Cappadocia</a></li>
+                <li>
+                  <a href="#">Discovering the Ancient Ruins of Ephesus</a>
+                </li>
+                <li><a href="#">A Guide to Turkish Cuisine</a></li>
+              </ul>
+            </div>
+
+            <div class="tags">
+              <h3 class="blog-info-title">Tags</h3>
+              <ul class="tags-list">
+                <li><a href="#">Food</a></li>
+                <li><a href="#">Fresh</a></li>
+                <li><a href="#">Organic</a></li>
+                <li><a href="#">Vegetable</a></li>
+                <li><a href="#">Harvest</a></li>
+              </ul>
+            </div>
+
+            <div class="advertisment">
+              <div class="advartisment-content">
+                <h3 class="blog-info-title">Advertisment</h3>
+                <p class="advertisment-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repudiandae, cumque.
+                </p>
+                <button class="btn btn-advs">Go there</button>
+              </div>
+              <img
+                src="./blog-images/advs-image.jpg"
+                alt=""
+                class="advertisment-img"
+              />
+            </div>
+
+            <div class="newsletter">
+              <h3 class="blog-info-title">Newsletter</h3>
+              <p class="newsletter-text">
+                Subscribe to our newsletter and get the latest updates. 
+                <br />
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <form action="">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  class="newsletter-input"
+                />
+                <button type="submit" class="btn btn-newsletter">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+        <!-- SUBSCRIPTION -->
+       <section class="section section-subscription">
+        <div class="container subscribe-container">
+
+          <div class="subscription-box">
+            <h3 class="heading-3 subscribe-heading">Get our pro offers</h3>
+            <p class="sub-text">Create a virtual for your company, and an overall branding tht stands out.</p>
+          </div>
+          <form class="subscribe-form" action="" method="post">
+            <input type="email" name="subcribe" value="" placeholder="Enter your email" class="subscribe-input" />
+            <button class="btn subscribe-btn" type="">Subscribe</button>
+          </form>
+        </div>
+       </section>
+
+       <!-- FOOTER -->
+        <footer>
+          <div class="container footer-container">
+            <div class="footer-logo-box">
+              <h4>Triptopia</h4>
+              <p>Hello, we are lift Media. Our goal is to translate the postive effects from revolutionizing</p>
+            </div>
+
+            <div class="footer-about">
+                <h4 class="footer-about-title">About Us</h4>
+                <ul>
+                  <li class="footer-about-item"><a href="#">About Us</a></li>
+                  <li class="footer-about-item"><a href="#">Our Services</a></li>
+                  <li class="footer-about-item"><a href="#">Privacy Plicy</a></li>
+                  <li class="footer-about-item"><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4 class="footer-contact-title">Contact</h4>
+                <ul>
+                  <li class="footer-contact-item"><a href="#">Contact Us</a></li>
+                  <li class="footer-contact-item"><a href="#">Support</a></li>
+                  <li class="footer-contact-item"><a href="#">FAQ</a></li>
+                  <li class="footer-contact-item"><a href="#">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-gallery">
+                <h4 class="footer-gallery-title">Gallery</h4>
+                <div class="footer-gallery-grid">
+                  <img src="./blog-images/destination-img-1.png" alt="" class="footer-gallery-image" />
+                  <img src="./blog-images/destination-img-2.png" alt="" class="footer-gallery-image" />
+                  <img src="./blog-images/destination-img-3.png" alt="" class="footer-gallery-image" />
+                  <img src="./blog-images/destination-img-4.png" alt="" class="footer-gallery-image" />
+                </div>
+              </div>
+
+            </div>
+            <div class="footer-bottom">
+              <p class="footer-bottom-text">&copy; 2023 Triptopia. All rights reserved.</p>
+              </div>
+        </footer>
+    </main>
+  </body>
+</html>

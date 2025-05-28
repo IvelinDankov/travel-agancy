@@ -13,7 +13,9 @@
   "description": "Creating travel agency project base on SoftUni Backend knowllage. ",
   "dependencies": {
     "express": "^5.1.0",
+    "express-handlebars": "^8.0.3",
     "express-mongoose": "^0.1.0",
-    "mongodb": "^6.16.0"
+    "mongodb": "^6.16.0",
+    "mongoose": "^8.15.1"
   }
 }
