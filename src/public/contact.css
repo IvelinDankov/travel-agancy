@@ -1,0 +1,136 @@
+/* BLOG */
+.contact-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 45rem;
+  background: url("/blog-images/1815.jpg");
+  color: var(--white-color);
+}
+
+.contact-header h1 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  display: block;
+}
+.contact-header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+}
+
+.contact-header ul li {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--white-color-2);
+}
+.contact-header ul li a {
+  text-decoration: none;
+  color: var(--white-color-2);
+  transition: all 0.3s ease-in-out;
+}
+.contact-header ul li a:hover {
+  color: var(--orange-color);
+  transform: scale(1.1);
+}
+.contact-header ul li a:visited {
+  color: var(--white-color-2);
+}
+.contact-header ul li a.active {
+  color: var(--orange-color);
+  transform: scale(1.1);
+}
+
+/* SECTION GET TO KNOW */
+.get-to-know-container {
+  display: flex;
+  gap: 10rem;
+  padding-top: 0;
+}
+.get-to-know-info {
+  width: 66rem;
+  height: 71.1rem;
+}
+
+.subtext {
+  color: var(--orange-color);
+  text-transform: uppercase;
+  font-weight: 600;
+  display: block;
+  margin: 1rem 0;
+}
+
+.heading-2 {
+  font-size: 4.8rem;
+  color: var(--secondary-color);
+  margin-bottom: 2rem;
+}
+.get-to-know-text {
+}
+
+.get-to-know-info-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 2rem 3rem 4rem 2rem;
+  background: var(--therthy-color);
+  font-size: 2.4rem;
+}
+
+.get-to-know-text {
+  margin-bottom: 1rem;
+}
+
+.get-to-know-info-empty {
+  background-color: var(--white-color);
+  background-image: url("./about-image.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  flex: 1;
+}
+
+.get-to-know-info-text {
+  width: 19.5rem;
+  background-color: var(--orange-color);
+  transform: translateX(-50%);
+  position: absolute;
+  bottom: 20%;
+  display: flex;
+  margin-bottom: -5rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 4rem;
+  color: var(--white-color);
+  overflow: hidden;
+}
+
+[name="information-circle"] {
+  width: 6rem;
+  height: 6rem;
+  object-fit: cover;
+  position: absolute;
+  bottom: 28%;
+  left: 0%;
+  border-radius: 50%;
+  outline: var(--white-color);
+  transform: translatex(-50%);
+  z-index: 10;
+  border: 10px solid var(--white-color);
+}
+
+.contact-image {
+  width: 100%;
+}

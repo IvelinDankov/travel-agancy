@@ -1,20 +1,14 @@
 import express from "express";
-import handlebars from "express-handlebars";
+
 import routes from "./routes.js";
+import setHbs from "./config/setHbs.js";
+const port = 3015;
 
 const app = express();
 
-const port = 3015;
+app.use(express.static("src/public"));
 
-app.engine(
-  "hbs",
-  handlebars.engine({
-    extname: "hbs",
-  })
-);
-
-app.set("view engine", "hbs");
-app.set("views", "src/views");
+setHbs(app);
 
 app.use(routes);
 
