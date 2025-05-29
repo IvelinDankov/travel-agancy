@@ -254,6 +254,7 @@ body {
   background-color: var(--orange-color);
   color: var(--white-color);
   padding: 1.5rem 3rem;
+  display: inline-block;
   border-radius: 5px;
   font-size: 1.3rem;
   font-weight: 500;
@@ -306,7 +307,7 @@ body {
 }
 
 .get-to-know-info-empty {
-  background-color: var(--white-color);
+  /* background-color: var(--white-color);
   background-image: url("./pics/about-image.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -314,11 +315,11 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  flex: 1;
+  flex: 1; */
 }
 
 .get-to-know-info-text {
-  width: 19.5rem;
+  /* width: 19.5rem;
   background-color: var(--orange-color);
   transform: translateX(-50%);
   position: absolute;
@@ -328,24 +329,25 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: 4rem;
+  padding: 4rem; 
   color: var(--white-color);
-  overflow: hidden;
+  overflow: hidden; */
 }
 
-[name="information-circle"] {
-  width: 6rem;
-  height: 6rem;
+/* [name="information-circle"] {
+  width: 10rem;
+  height: 10rem;
   object-fit: cover;
   position: absolute;
   bottom: 28%;
   left: 0%;
   border-radius: 50%;
+  border: none;
   outline: var(--white-color);
   transform: translatex(-50%);
   z-index: 10;
-  border: 10px solid var(--white-color);
-}
+  /* border: 10px solid var(--white-color); */
+
 /* DESTINATION */
 
 .destinations-container {
@@ -378,6 +380,11 @@ body {
   overflow: hidden;
   position: relative;
   padding: 2rem;
+}
+.destination-card img {
+  height: 12rem;
+  width: 12rem;
+  border-radius: 5px;
 }
 
 .destination-description {
@@ -622,6 +629,13 @@ h3 {
   padding: 2rem;
   display: flex;
   gap: 2rem;
+}
+.trending-destination-image {
+  height: 12rem;
+  width: 12rem;
+  object-fit: cover;
+  display: block;
+  border-radius: 5px;
 }
 .trending-destination-info {
   display: flex;

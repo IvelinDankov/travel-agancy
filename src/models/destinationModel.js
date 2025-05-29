@@ -5,12 +5,12 @@ const DestinationsSchema = new Schema({
     type: String,
     required: true,
   },
-  image: {
+  imageUrl: {
     type: String,
     required: true,
   },
   rating: {
-    type: String,
+    type: Number,
   },
   reviews: {
     type: Number,
@@ -18,6 +18,9 @@ const DestinationsSchema = new Schema({
   description: {
     type: String,
     required: true,
+  },
+  type: {
+    type: String,
   },
 });
 

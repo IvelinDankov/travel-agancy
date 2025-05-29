@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "title": "Santorini, Greece",
+    "imageUrl": "santorini.jpg",
+    "rating": 4.9,
+    "reviews": 210,
+    "description": "A breathtaking island known for its stunning sunsets, white-washed houses, and crystal-clear waters.",
+    "type": "romantic"
+  },
+  {
+    "id": 2,
+    "title": "Kyoto, Japan",
+    "imageUrl": "kyoto.jpg",
+    "rating": 4.8,
+    "reviews": 190,
+    "description": "A cultural hub rich in history, temples, and traditional tea houses.",
+    "type": "solo"
+  },
+  {
+    "id": 3,
+    "title": "Banff National Park, Canada",
+    "imageUrl": "banff.jpg",
+    "rating": 5.0,
+    "reviews": 250,
+    "description": "Majestic mountains, turquoise lakes, and incredible wildlife make Banff a must-visit.",
+    "type": "adventure"
+  },
+  {
+    "id": 4,
+    "title": "Phuket, Thailand",
+    "imageUrl": "phuket.jpg",
+    "rating": 4.7,
+    "reviews": 175,
+    "description": "Famous for its stunning beaches, vibrant nightlife, and great snorkeling spots.",
+    "type": "group"
+  },
+  {
+    "id": 5,
+    "title": "Machu Picchu, Peru",
+    "imageUrl": "machu_picchu.jpg",
+    "rating": 4.9,
+    "reviews": 300,
+    "description": "An iconic Incan citadel set high in the Andes mountains.",
+    "type": "adventure"
+  },
+  {
+    "id": 6,
+    "title": "Venice, Italy",
+    "imageUrl": "venice.jpg",
+    "rating": 4.8,
+    "reviews": 220,
+    "description": "A charming city built on canals, known for its romantic gondola rides.",
+    "type": "romantic"
+  },
+  {
+    "id": 7,
+    "title": "New York City, USA",
+    "imageUrl": "nyc.jpg",
+    "rating": 4.7,
+    "reviews": 320,
+    "description": "The city that never sleeps, home to iconic landmarks and diverse cultures.",
+    "type": "solo"
+  },
+  {
+    "id": 8,
+    "title": "Reykjavik, Iceland",
+    "imageUrl": "reykjavik.jpg",
+    "rating": 4.9,
+    "reviews": 180,
+    "description": "A gateway to Iceland's dramatic landscapes, including geysers and the Northern Lights.",
+    "type": "adventure"
+  },
+  {
+    "id": 9,
+    "title": "Cape Town, South Africa",
+    "imageUrl": "cape_town.jpg",
+    "rating": 4.9,
+    "reviews": 160,
+    "description": "A stunning coastal city surrounded by mountains and vineyards.",
+    "type": "group"
+  },
+  {
+    "id": 10,
+    "title": "Dubai, UAE",
+    "imageUrl": "dubai.jpg",
+    "rating": 4.8,
+    "reviews": 230,
+    "description": "A futuristic city boasting luxury, skyscrapers, and the world's tallest building.",
+    "type": "day long"
+  },
+  {
+    "id": 11,
+    "title": "Bali, Indonesia",
+    "imageUrl": "bali.jpg",
+    "rating": 4.9,
+    "reviews": 270,
+    "description": "A tropical paradise with stunning beaches, lush forests, and rich culture.",
+    "type": "solo"
+  },
+  {
+    "id": 12,
+    "title": "Prague, Czech Republic",
+    "imageUrl": "prague.jpg",
+    "rating": 4.8,
+    "reviews": 200,
+    "description": "A historic city known for its charming architecture and rich medieval history.",
+    "type": "group"
+  },
+  {
+    "id": 13,
+    "title": "Sydney, Australia",
+    "imageUrl": "sydney.jpg",
+    "rating": 4.9,
+    "reviews": 250,
+    "description": "A vibrant city known for its iconic Opera House and beautiful beaches.",
+    "type": "day long"
+  },
+  {
+    "id": 14,
+    "title": "Cinque Terre, Italy",
+    "imageUrl": "cinque_terre.jpg",
+    "rating": 5.0,
+    "reviews": 280,
+    "description": "A collection of picturesque coastal villages perched on cliffs.",
+    "type": "romantic"
+  },
+  {
+    "id": 15,
+    "title": "Tokyo, Japan",
+    "imageUrl": "tokyo.jpg",
+    "rating": 4.7,
+    "reviews": 310,
+    "description": "A dynamic metropolis blending traditional temples and cutting-edge technology.",
+    "type": "solo"
+  },
+  {
+    "id": 16,
+    "title": "Paris, France",
+    "imageUrl": "paris.jpg",
+    "rating": 4.9,
+    "reviews": 400,
+    "description": "The city of love, famous for its Eiffel Tower, art, and cafes.",
+    "type": "romantic"
+  },
+  {
+    "id": 17,
+    "title": "Rio de Janeiro, Brazil",
+    "imageUrl": "rio.jpg",
+    "rating": 4.8,
+    "reviews": 290,
+    "description": "A city of vibrant culture, beautiful beaches, and stunning landscapes.",
+    "type": "group"
+  },
+  {
+    "id": 18,
+    "title": "Amsterdam, Netherlands",
+    "imageUrl": "amsterdam.jpg",
+    "rating": 4.7,
+    "reviews": 220,
+    "description": "A city known for its canals, museums, and cycling-friendly streets.",
+    "type": "day long"
+  },
+  {
+    "id": 19,
+    "title": "Queenstown, New Zealand",
+    "imageUrl": "queenstown.jpg",
+    "rating": 5.0,
+    "reviews": 180,
+    "description": "An adventure-lover's dream, packed with activities like bungee jumping and hiking.",
+    "type": "adventure"
+  },
+  {
+    "id": 20,
+    "title": "Barcelona, Spain",
+    "imageUrl": "barcelona.jpg",
+    "rating": 4.9,
+    "reviews": 350,
+    "description": "A vibrant city known for its stunning architecture, culture, and beaches.",
+    "type": "group"
+  }
+]

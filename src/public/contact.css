@@ -51,7 +51,7 @@
 .get-to-know-container {
   display: flex;
   gap: 10rem;
-  padding-top: 0;
+  padding-top: 20rem;
 }
 .get-to-know-info {
   width: 66rem;
@@ -114,7 +114,12 @@
   justify-content: flex-start;
   padding: 4rem;
   color: var(--white-color);
-  overflow: hidden;
+  /* overflow: hidden; */
+}
+
+.icon-inner > * {
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 [name="information-circle"] {
@@ -123,12 +128,13 @@
   object-fit: cover;
   position: absolute;
   bottom: 28%;
+  display: block;
   left: 0%;
   border-radius: 50%;
-  outline: var(--white-color);
+  /* border: none; */
   transform: translatex(-50%);
   z-index: 10;
-  border: 10px solid var(--white-color);
+  /* border: 10px solid var(--white-color); */
 }
 
 .contact-image {
