@@ -541,13 +541,14 @@ h3 {
   margin-bottom: 1rem;
 }
 
-.rating {
+.popular-tour-card > .rating {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  margin: 1rem 0;
+  margin: 1rem 0 0 1rem;
+  /* left: 2rem; */
 }
-.rating-star {
+.popular-tour-card > .rating-star {
   color: var(--orange-color);
   font-size: 1.5rem;
 }
@@ -571,6 +572,10 @@ h3 {
 }
 .popular-tour-nav-link {
   text-decoration: none;
+  cursor: pointer;
+  padding: 0.5rem 0.8rem;
+  border-radius: 3px;
+  border: none;
   color: var(--primary-color);
   font-size: 1.6rem;
   font-weight: 500;
@@ -578,15 +583,15 @@ h3 {
 }
 .popular-tour-nav-link:hover {
   color: var(--orange-color);
-  transform: scale(1.1);
+  transform: scale(1.02);
 }
 .popular-tour-nav-link.active {
   /* color: var(--orange-color); */
-  padding: 1rem;
-  border-radius: 50rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 10px;
   border: 1px solid var(--primary-color);
   font-weight: 700;
-  transform: scale(1.1);
+  transform: scale(1.01);
 }
 
 .top-destination-grid {
@@ -706,11 +711,24 @@ h3 {
 .faq-accordion {
   display: flex;
   gap: 2rem;
+  list-style: none;
   flex-direction: column;
 }
+.faq-accordion > li {
+  width: 100%;
+}
 
-.faq-text.none {
+.faq-text {
   display: none;
+}
+
+.faq-title {
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-weight: 600;
+  text-align: left;
 }
 
 .faq-title,

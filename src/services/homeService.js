@@ -1,5 +1,7 @@
 import Destination from "../models/destinationModel.js";
+import faqModel from "../models/faqModel.js";
 import Team from "../models/team.js";
+import Testimonials from "../models/testimonials.js";
 
 const homeService = {
   async getAll() {
@@ -50,6 +52,18 @@ const homeService = {
 
   async getTeam() {
     return await Team.find({}).lean();
+  },
+
+  async getFAQ() {
+    return faqModel.find().lean();
+  },
+
+  async createFAQ() {
+    return faqModel.create();
+  },
+
+  async getTestimonials() {
+    return Testimonials.find().lean();
   },
 };
 

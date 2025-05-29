@@ -1,6 +1,5 @@
 import { Router } from "express";
 import homeService from "../services/homeService.js";
-import getStars from "../utils/getStars.js";
 
 const homeController = Router();
 
@@ -14,11 +13,16 @@ homeController.get("/", async (req, res) => {
   const ourTeam = await homeService.getTeam();
   const bestReviews = await homeService.getTendingDestinations();
 
+  const FAQs = await homeService.getFAQ();
+  const firstTestimonial = await homeService.getTestimonials();
+
   res.render("home", {
     topDestinations,
     destinations,
     ourTeam,
     bestReviews,
+    FAQs,
+    firstTestimonial,
   });
 });
 

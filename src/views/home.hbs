@@ -191,7 +191,10 @@
     <nav>
       <ul class="popular-tour-nav-list">
         <li class="popular-tour-nav-item">
-          <button class="popular-tour-nav-link active" data-type="romantic">Day Long Tour</button>
+          <button class="popular-tour-nav-link active" data-type="all">Show All</button>
+        </li>
+        <li class="popular-tour-nav-item">
+          <button class="popular-tour-nav-link" data-type="romantic">Day Long Tour</button>
         </li>
         <li class="popular-tour-nav-item">
           <button class="popular-tour-nav-link" data-type="adventure">Adventure Trip</button>
@@ -281,16 +284,17 @@
       About Us</h2>
 
     <div class="testimonial-grid">
+      {{#each firstTestimonial}}
       <div class="testimonial-card">
-        <img src="./pics/team-1.jpg" alt="" class="testimonial-image" />
-        <h3 class="testimonial-name">John Doe</h3>
+        <img src="{{imageUrl}}" alt="{{name}}" class="testimonial-image" />
+        <h3 class="testimonial-name"> {{name}} </h3>
         <p class="testimonial-text">
-          "Triptopia made my travel experience unforgettable! The
-          personalized itinerary was perfect for me."
+          {{feedback}}
         </p>
         <button type="" class="arr-right">&rarr;</button>
         <button type="" class="arr-left">&larr;</button>
       </div>
+      {{/each}}
     </div>
   </div>
 
@@ -305,25 +309,17 @@
       <div class="faq-image-box">
         <img src="./pics/faq-img-1.png" alt="FAQ" class="faq-image" />
       </div>
-      <div class="faq-accordion">
-        <div>
-          <h3 class="faq-title">What is Triptopia?</h3>
+      <ul class="faq-accordion">
+        {{#each FAQs}}
+        <li>
+          <button class="faq-title"> {{question}} </button>
           <p class="faq-text none">
-            Triptopia is a travel agency that specializes in creating
-            personalized itineraries and providing expert travel advice.
+            {{answer}}
           </p>
-        </div>
-        <div>
-          <h3 class="faq-title">How do I book a trip?</h3>
-          <p class="faq-text">
-            You can book a trip by contacting us through our website or
-            by phone. Our team will assist you in creating your ideal
-            itinerary.
-          </p>
-
-        </div>
-
-      </div>
+        </li>
+        
+        {{/each}}
+      </ul>
     </div>
 </section>
 <!--  BLOG SECTION -->
@@ -395,7 +391,3 @@
   </div>
 </section>
 
-
-<script>
- 
-</script>
