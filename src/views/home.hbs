@@ -88,9 +88,8 @@
     <span class="subtext">top destination</span>
     <h2 class="heading-2">Search a best place in the world</h2>
     <p class="destination-subtext">
-      Our dating website offers a range of features and benifits that make
-      finding love online simple and enjoyable. With our advanced matching
-      algorithm
+      Our trip website offers a range of features and benifits that make
+      finding best destination online simple and enjoyable.
     </p>
     <div class="destinations-grid">
       {{#each topDestinations}}
@@ -184,9 +183,7 @@
     <h2 class="heading-2">See Destinations You’ll <br>
       Love To Visit</h2>
     <p class="popular-tour-subtext">
-      Our dating website offers a range of features and benifits that
-      make finding love online simple and enjoyable. With our advanced
-      matching algorithm
+     A Guide to Stunning Places Around the World That Promise Memorable Journeys and Incredible Views
     </p>
     <nav>
       <ul class="popular-tour-nav-list">
@@ -200,7 +197,7 @@
           <button class="popular-tour-nav-link" data-type="adventure">Adventure Trip</button>
         </li>
         <li class="popular-tour-nav-item">
-          <button class="popular-tour-nav-link" data-type="group">Grup Tour</button>
+          <button class="popular-tour-nav-link" data-type="group">Group Tour</button>
         </li>
         <li class="popular-tour-nav-item">
           <button class="popular-tour-nav-link" data-type="solo">Solo Tour</button>
@@ -262,7 +259,7 @@
       <div class="tending-destionation-cart">
         <img src="{{imageUrl}}" alt="{{title}}" class="trending-destination-image" />
         <div class="trending-destination-info">
-          <h3 class="trending-destination-title"> {{title}} </h3>
+          <h3 class="trending-destination-title"> {{city}} </h3>
           <p class="rating">
             <ion-icon name="star"></ion-icon>
             <span class="average-rating"> {{rating}}  ({{reviews}})</span>
@@ -284,15 +281,15 @@
       About Us</h2>
 
     <div class="testimonial-grid">
-      {{#each firstTestimonial}}
+      {{#each testimonials}}
       <div class="testimonial-card">
         <img src="{{imageUrl}}" alt="{{name}}" class="testimonial-image" />
         <h3 class="testimonial-name"> {{name}} </h3>
         <p class="testimonial-text">
           {{feedback}}
         </p>
-        <button type="" class="arr-right">&rarr;</button>
-        <button type="" class="arr-left">&larr;</button>
+        <button id="prev"  class="arr-right">&rarr;</button>
+        <button id="next"  class="arr-left">&larr;</button>
       </div>
       {{/each}}
     </div>
@@ -324,52 +321,31 @@
 </section>
 <!--  BLOG SECTION -->
 <section class="section-blog">
-  <div class="container blog-container">
+  <div class="container home-blog-container">
     <span class="subtext">blog</span>
     <h2 class="heading-2">Tips and Tricks for <br>
       Planning Your Dream Trip</h2>
 
-    <div class="blog-grid">
+    <div class="home-blog-grid">
+        {{#each blogPosts}}
+      <div class="home-blog-card">
+        <p class="home-blog-date"> {{date}}</p>
+        <img src="{{image}}" alt="{{title}}" class="home-blog-home-image" />
+        <div class="home-blog-cart-content">
 
-      <div class="blog-card">
-        <p class="blog-date">08 <br> May</p>
-        <img src="./pics/blog-1.png" alt="" class="blog-home-image" />
-        <div class="blog-cart-content">
-
-          <p class="blog-subtitle">Solo trip</p>
-          <h3 class="blog-title">Tracing Ancient Ruins and Roman Relics</h3>
-          <p class="blog-description">
-            <img class="post-author-image" src="./pics/avatar-4.jpg" alt="">
-            <span>Robert Fox</span>
+          <p class="home-blog-subtitle">Solo trip</p>
+          <h3 class="home-blog-title"> {{title}} </h3>
+          <p class="home-blog-description">
+            <img class="home-post-author-image" src="./pics/avatar-4.jpg" alt="">
+            <span> {{author}} </span>
           </p>
         </div>
       </div>
-      <div class="blog-card">
-        <p class="blog-date">08 <br> May</p>
-        <img src="./pics/blog-1.png" alt="" class="blog-home-image" />
-        <div class="blog-cart-content">
 
-          <p class="blog-subtitle">Solo trip</p>
-          <h3 class="blog-title">Tracing Ancient Ruins and Roman Relics</h3>
-          <p class="blog-description">
-            <img class="post-author-image" src="./pics/avatar-4.jpg" alt="">
-            <span>Robert Fox</span>
-          </p>
-        </div>
-      </div>
-      <div class="blog-card">
-        <p class="blog-date">08 <br> May</p>
-        <img src="./pics/blog-1.png" alt="" class="blog-home-image" />
-        <div class="blog-cart-content">
-
-          <p class="blog-subtitle">Solo trip</p>
-          <h3 class="blog-title">Tracing Ancient Ruins and Roman Relics</h3>
-          <p class="blog-description">
-            <img class="post-author-image" src="./pics/avatar-4.jpg" alt="">
-            <span>Robert Fox</span>
-          </p>
-        </div>
-      </div>
+      {{/each}}
+      
+     
+      
 
     </div>
 
@@ -380,13 +356,13 @@
 <section class="section section-subscription">
   <div class="container subscribe-container">
 
-    <div class="subscription-box">
+    <div class="home-subscription-box">
       <h3 class="heading-3 subscribe-heading">Get our pro offers</h3>
       <p class="sub-text">Create a virtual for your company, and an overall branding tht stands out.</p>
     </div>
-    <form class="subscribe-form" action="" method="post">
-      <input type="email" name="subscribe" value="" placeholder="Enter your email" class="subscribe-input" />
-      <button class="subscribe-btn" type="">Subscribe</button>
+    <form class="home-subscribe-form" action="" method="post">
+      <input type="email" name="subscribe" value="" placeholder="Enter your email" class="home-subscribe-input" />
+      <button class="home-subscribe-btn" type="">Subscribe</button>
     </form>
   </div>
 </section>

@@ -14,7 +14,8 @@ homeController.get("/", async (req, res) => {
   const bestReviews = await homeService.getTendingDestinations();
 
   const FAQs = await homeService.getFAQ();
-  const firstTestimonial = await homeService.getTestimonials();
+  const testimonials = await homeService.getTestimonials();
+  const blogPosts = await homeService.getAllBlogs();
 
   res.render("home", {
     topDestinations,
@@ -22,7 +23,8 @@ homeController.get("/", async (req, res) => {
     ourTeam,
     bestReviews,
     FAQs,
-    firstTestimonial,
+    testimonials,
+    blogPosts,
   });
 });
 

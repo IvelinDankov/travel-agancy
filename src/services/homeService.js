@@ -1,3 +1,4 @@
+import blockpost from "../models/blogPostModel.js";
 import Destination from "../models/destinationModel.js";
 import faqModel from "../models/faqModel.js";
 import Team from "../models/team.js";
@@ -64,6 +65,11 @@ const homeService = {
 
   async getTestimonials() {
     return Testimonials.find().lean();
+  },
+
+  // BLOG
+  async getAllBlogs() {
+    return blockpost.find().limit(3).lean();
   },
 };
 

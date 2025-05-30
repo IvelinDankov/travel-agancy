@@ -11,25 +11,25 @@
       <section class="blog-content">
         <div class="container blog-container">
           <div class="blog-content-list">
+            {{#each blogs}}
             <div class="blog-content-item">
               <img
-                src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0"
-                alt=""
+                src="{{image}}"
+                alt="{{title}}"
               />
               <div class="blog-content-item-info">
                 <h2 class="blog-title-text">
-                  Anatolian Adventure: Off-the-Beaten-Path Discoveries in
-                  Turkey's Heartland
+                  {{title}}
                 </h2>
-                <p class="blog-description">Lorem ipsum dolor sit amet.</p>
+                <p class="blog-description"> {{description}} </p>
                 <div class="blog-info">
                   <div class="blog-info-item">
                     <ion-icon name="person-outline"></ion-icon>
-                    <span>Author Name</span>
+                    <span> {{author}} </span>
                   </div>
                   <div class="blog-info-item">
                     <ion-icon name="calendar-outline"></ion-icon>
-                    <span>Published Date</span>
+                    <span> {{date}} </span>
                   </div>
                   <div class="blog-info-item">
                     <ion-icon name="chatbubble-outline"></ion-icon>
@@ -39,6 +39,7 @@
                 </div>
               </div>
             </div>
+            {{/each}}
           </div>
           <div class="blog-info-list">
             <form action="">
