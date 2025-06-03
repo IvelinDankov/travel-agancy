@@ -1,0 +1,126 @@
+<section class="hero-section">
+  <div class="hero-overlay">
+    {{! <h1 class="hero-title">
+      Discover the World,
+      <br />
+      one adventure at a time
+    </h1>
+    <p class="hero-description">Explore the world with us!</p>
+    <div class="cta-hero">
+      <a href="/contact" class="btn hero-btn">Contact Us</a>
+      <a href="/destination" class="btn hero-btn-secondary">Get Quote</a>
+    </div> }}
+    <div class="hero-image-box">
+      {{! <img src="/static/pics/hero-image.jpg" alt="Travel Image" class="hero-image" /> }}
+    </div>
+    <form class="search-box" method="post">
+      <div>
+        <label for="Destination">Destination</label>
+        <select name="dest-title">
+          <option value="----"> ------- </option>
+          {{#each destinations}}
+            <option value="{{_id}}"> {{title}} </option>
+          {{/each}}
+          {{! <option value="Viena">Viena</option> }}
+        </select>
+      </div>
+      <div>
+        <label for="">Duration</label>
+        <select name="days">
+
+          <option value="3"> 1-3 Days </option>
+          <option value="5"> 3-5 Days </option>
+          <option value="15"> 5-15 Days </option>
+          <option value="more"> 15 or more Days </option>
+
+          {{! <option value="2">2</option> }}
+        </select>
+      </div>
+      <div>
+        <label for="">Travel Type</label>
+        <select name="type">
+
+          <option value=" {{_id}} "> {{type}} </option>
+
+          <option value="Viena">Viena</option>
+        </select>
+      </div>
+      <div>
+        <label for="">Travelers</label>
+        <select name="travalers">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="more">6+</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-submit">Find Availabilty</button>
+    </form>
+
+  </div>
+</section>
+
+<section class="section-populartour">
+  <div class="container popular-tour-container">
+    <span class="subtext">popular tour</span>
+    <h2 class="heading-2">See Destinations You’ll
+      <br />
+      Love To Visit</h2>
+    <p class="popular-tour-subtext">
+      A Guide to Stunning Places Around the World That Promise Memorable
+      Journeys and Incredible Views
+    </p>
+    <nav>
+      <ul class="popular-tour-nav-list">
+        <li class="popular-tour-nav-item">
+          <button class="popular-tour-nav-link active" data-type="all">Show All</button>
+        </li>
+        <li class="popular-tour-nav-item">
+          <button class="popular-tour-nav-link" data-type="romantic">Day Long
+            Tour</button>
+        </li>
+        <li class="popular-tour-nav-item">
+          <button class="popular-tour-nav-link" data-type="adventure">Adventure
+            Trip</button>
+        </li>
+        <li class="popular-tour-nav-item">
+          <button class="popular-tour-nav-link" data-type="group">Group Tour</button>
+        </li>
+        <li class="popular-tour-nav-item">
+          <button class="popular-tour-nav-link" data-type="solo">Solo Tour</button>
+        </li>
+      </ul>
+    </nav>
+    <div class="popular-tour-grid">
+
+      {{#each destinations}}
+
+        <div class="popular-tour-card" data-type="{{type}}">
+          <img src="{{imageUrl}}" alt="{{title}}" class="popular-tour-image" />
+          <ion-icon name="heart-outline"></ion-icon>
+          <h4 class="popular-tour-city"><ion-icon
+              name="locate-outline"
+            ></ion-icon>
+            {{city}}
+          </h4>
+          <h3 class="popular-tour-title"> {{title}} </h3>
+          <p class="rating">
+
+            {{starRating rating}}
+
+            ({{rating}})
+          </p>
+          <div class="pupular-tour-cta">
+            <p class="popular-tour-price"> {{price}}€ </p>
+            <button class="btn btn-submit">Book Trip</button>
+          </div>
+        </div>
+
+      {{/each}}
+
+    </div>
+  </div>
+</section>

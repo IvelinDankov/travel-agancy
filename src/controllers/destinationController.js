@@ -15,4 +15,8 @@ destinationController.get("/:id/destination-details", async (req, res) => {
   res.render("destination-details", { destination });
 });
 
+destinationController.get("/search", (req, res) => {
+  res.render("search");
+});
+
 export default destinationController;
