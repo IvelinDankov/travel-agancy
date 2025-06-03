@@ -8,7 +8,7 @@ const routes = Router();
 
 routes.use(homeController);
 routes.use(blogController);
-routes.use(destinationController);
+routes.use("/destinations", destinationController);
 routes.use(authController);
 
 routes.use((req, res, next) => {

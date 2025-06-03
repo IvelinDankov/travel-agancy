@@ -2,12 +2,11 @@
         <section class="destination-details-header">
             <h1>Destination details</h1>
             <ul>
-                <li><a href="/Home/Home.html">Home</a></li>
+                <li><a href="/">Home</a></li>
                 &bull;
-                <li><a href="/Home/Home.html">Pages</a></li>
-                &bull;
+              
                 <li>
-                    <a href="/blog/blog.html" class="active"> Destination Details </a>
+                    <a href="/blog" class="active"> Destination Details </a>
                 </li>
             </ul>
         </section>
@@ -15,27 +14,23 @@
         <section class="destination-details-content">
             <div class="container destination-details-container">
                 <div class="destination-details-main">
-                    <img src="./destination-images/destination-details-1.png" alt=""
+                    <img src="{{destination.imageUrl}}" alt="{{destination.title}}"
                         class="destination-details-image" />
                     <div class="destination-details-info">
                         <div class="destination-sub-info">
-                            <p class="rating-text">5.0</p>
+                            <p class="rating-text"> {{destination.rating}} </p>
                             <p class="condition">Perfect</p>
                             <p class="type">Hotels</p>
                             <p class="bulding">Buldings</p>
                             <p class="value">Top Value</p>
                             <p class="rating">
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
+                                {{starRating rating}}
                             </p>
                         </div>
                     </div>
 
                     <h2 class="destination-details-heading">
-                        Honouring History and Heritage in the Land of Heroes
+                       {{destination.title}}
                     </h2>
 
                     <div class="destination-taps">
@@ -48,11 +43,7 @@
                             </button>
                         </div>
                         <p class="description-details-text">
-                            Arabian Park Hotel is a great choice for travellers looking for
-                            a 3 star hotel in Dubai. It is located in Bur Dubai. This Hotel
-                            stands out as one of the highly recom.2 kms, Al Wasl Indoor
-                            Stadium (1.2 kms), Dubai Mall (5.4 kms), Jumeirah Beach Park
-                            (9.6 kms) and Jumeirah Public Beach (15.8 kms).
+                            {{destination.description}}
                         </p>
                     </div>
 

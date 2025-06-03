@@ -7,7 +7,8 @@ const port = 3015;
 
 const app = express();
 
-app.use(express.static("src/public"));
+app.use("/static", express.static(`src/public`));
+// app.use("./images", express.static("src/public"));
 
 main().catch((err) => console.log(err));
 

@@ -17,6 +17,8 @@ homeController.get("/", async (req, res) => {
   const testimonials = await homeService.getTestimonials();
   const blogPosts = await homeService.getAllBlogs();
 
+  
+
   res.render("home", {
     topDestinations,
     destinations,

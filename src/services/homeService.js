@@ -47,6 +47,10 @@ const homeService = {
       ();
   },
 
+  getOne(destinationId) {
+    return Destination.findById(destinationId);
+  },
+
   async getTendingDestinations() {
     return await Destination.find({ reviews: { $gt: 250 } }).lean();
   },

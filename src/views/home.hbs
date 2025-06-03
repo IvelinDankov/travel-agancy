@@ -10,40 +10,52 @@
       <a href="/destination" class="btn hero-btn-secondary">Get Quote</a>
     </div>
     <div class="hero-image-box">
-      <img src="./pics/hero-image.jpg" alt="Travel Image" class="hero-image" />
-      <form class="search-box">
+      <img src="/static/pics/hero-image.jpg" alt="Travel Image" class="hero-image" />
+      <form class="search-box" method="post">
         <div>
           <label for="Destination">Destination</label>
-          <select>
-            <option value="Instanbul">Istambul</option>
-            <option value="Viena">Viena</option>
+          <select name="dest-title">
+            <option value="----"> ------- </option>
+            {{#each destinations}}
+            <option value="{{_id}}"> {{title}} </option>
+            {{/each}}
+            {{!-- <option value="Viena">Viena</option> --}}
           </select>
         </div>
         <div>
           <label for="">Duration</label>
-          <select>
-            <option value="1">1</option>
-            <option value="2">2</option>
+          <select name="days">
+            
+            <option value="3"> 1-3 Days </option>
+            <option value="5"> 3-5 Days </option>
+            <option value="15"> 5-15 Days </option>
+            <option value="more"> 15 or more Days </option>
+            
+            {{!-- <option value="2">2</option> --}}
           </select>
         </div>
         <div>
           <label for="">Travel Type</label>
-          <select>
-            <option value="adventure">Adventure</option>
+          <select name="type">
+           
+            <option value=" {{_id}} " > {{type}} </option>
+           
             <option value="Viena">Viena</option>
           </select>
         </div>
         <div>
           <label for="">Travelers</label>
-          <select>
+          <select name="travalers">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
             <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="more">6+</option>
           </select>
         </div>
-        <button class="btn btn-submit">Find Availabilty</button>
+        <button type="submit" class="btn btn-submit">Find Availabilty</button>
       </form>
     </div>
   </div>
@@ -117,7 +129,7 @@
     <div class="team-grid">
       {{#each ourTeam}}
       <div class="team-card">
-        <img src="/{{image}}" alt="{{name}}" class="team-image" />
+        <img src="{{image}}" alt="{{name}}" class="team-image" />
         <h3 class="team-name"> {{name}} </h3>
         <p class="team-role"> {{role}} </p>
       </div>
@@ -143,7 +155,7 @@
 
     <div class="about-grid">
       <div class="about-card">
-        <img src="./pics/icon-about-1.png" alt="" class="about-image" />
+        <img src="/static/pics/icon-about-1.png" alt="" class="about-image" />
         <h3 class="about-title">Personalized Itineraries</h3>
         <p class="about-description">
           We create customized travel plans tailored to your interests and
@@ -151,23 +163,23 @@
         </p>
       </div>
       <div class="about-card">
-        <img src="./pics/icon-about-2.png" alt="" class="about-image" />
+        <img src="/static/pics/icon-about-2.png" alt="" class="about-image" />
         <h3 class="about-title">Expert Guidance</h3>
         <p class="about-description">
           Our team of travel experts is here to provide you with
           valuable insights and recommendations.
         </p>
       </div>
-      <img src="./pics/about-image-2.png" alt="about image" class="about-image" />
+      <img src="/static/pics/about-image-2.png" alt="about image" class="about-image" />
       <div class="about-card">
-        <img src="./pics/icon-about-3.png" alt="" class="about-image" />
+        <img src="/static/pics/icon-about-3.png" alt="" class="about-image" />
         <h3 class="about-title">Unforgettable Experiences</h3>
         <p class="about-description">
           We strive to create memorable moments that will last a lifetime.
         </p>
       </div>
       <div class="about-card">
-        <img src="./pics/icon-about-4.png" alt="" class="about-image" />
+        <img src="/static/pics/icon-about-4.png" alt="" class="about-image" />
         <h3 class="about-title">24/7 Support</h3>
         <p class="about-description">
           Our dedicated support team is available around the clock to
@@ -215,7 +227,7 @@
         <h3 class="popular-tour-title"> {{title}} </h3>
         <p class="rating">
           
-          avg. rating:
+          {{starRating rating}}
           
           ({{rating}})
         </p>
@@ -237,11 +249,11 @@
     <h2 class="heading-2">Unveiling World's Top <br>
       Travel Hotspots</h2>
     <div class="top-destination-grid">
-      <img src="./pics/des-1.jpg" alt="">
-      <img src="./pics/des-2.jpg" alt="">
-      <img src="./pics/des-3.jpg" alt="">
-      <img src="./pics/des-4.jpg" alt="">
-      <img src="./pics/des-5.jpg" alt="">
+      <img src="/static/pics/des-1.jpg" alt="">
+      <img src="/static/pics/des-2.jpg" alt="">
+      <img src="/static/pics/des-3.jpg" alt="">
+      <img src="/static/pics/des-4.jpg" alt="">
+      <img src="/static/pics/des-5.jpg" alt="">
     </div>
   </div>
 
@@ -304,7 +316,7 @@
 
     <div class="faq-grid">
       <div class="faq-image-box">
-        <img src="./pics/faq-img-1.png" alt="FAQ" class="faq-image" />
+        <img src="/static/pics/faq-img-1.png" alt="FAQ" class="faq-image" />
       </div>
       <ul class="faq-accordion">
         {{#each FAQs}}
@@ -336,7 +348,7 @@
           <p class="home-blog-subtitle">Solo trip</p>
           <h3 class="home-blog-title"> {{title}} </h3>
           <p class="home-blog-description">
-            <img class="home-post-author-image" src="./pics/avatar-4.jpg" alt="">
+            <img class="home-post-author-image" src="/static/pics/avatar-4.jpg" alt="">
             <span> {{author}} </span>
           </p>
         </div>
