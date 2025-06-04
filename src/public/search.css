@@ -62,3 +62,7 @@
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
+
+.btn-search:hover {
+  background-color: var(--orange-color-1);
+}

@@ -11,51 +11,8 @@
     </div>
     <div class="hero-image-box">
       <img src="/static/pics/hero-image.jpg" alt="Travel Image" class="hero-image" />
-      <form class="search-box" method="post">
-        <div>
-          <label for="Destination">Destination</label>
-          <select name="dest-title">
-            <option value="----"> ------- </option>
-            {{#each destinations}}
-            <option value="{{_id}}"> {{title}} </option>
-            {{/each}}
-            {{!-- <option value="Viena">Viena</option> --}}
-          </select>
-        </div>
-        <div>
-          <label for="">Duration</label>
-          <select name="days">
-            
-            <option value="3"> 1-3 Days </option>
-            <option value="5"> 3-5 Days </option>
-            <option value="15"> 5-15 Days </option>
-            <option value="more"> 15 or more Days </option>
-            
-            {{!-- <option value="2">2</option> --}}
-          </select>
-        </div>
-        <div>
-          <label for="">Travel Type</label>
-          <select name="type">
-           
-            <option value=" {{_id}} " > {{type}} </option>
-           
-            <option value="Viena">Viena</option>
-          </select>
-        </div>
-        <div>
-          <label for="">Travelers</label>
-          <select name="travalers">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="more">6+</option>
-          </select>
-        </div>
-        <button type="submit" class="btn btn-submit">Find Availabilty</button>
+      <form action="/destinations/search" class="home-search-box" method="get">
+        {{>form}}
       </form>
     </div>
   </div>

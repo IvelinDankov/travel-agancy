@@ -125,6 +125,7 @@ body {
   align-items: center;
   margin: 0 auto;
   padding: 8rem 0;
+  z-index: -1;
 }
 
 .hero-title {
@@ -201,13 +202,14 @@ body {
   height: 100%;
   object-fit: cover;
   display: block;
+  position: absolute;
 }
 
 /*  FORM */
 
-.search-box {
+.home-search-box {
   position: absolute;
-  bottom: 10%;
+  bottom: 12%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -215,28 +217,32 @@ body {
   align-items: center;
   gap: 2rem;
 
-  background-color: hsla(0, 0%, 0%, 0.3);
+  background: hsla(0, 0%, 0%, 0.5);
+
   padding: 2rem;
   border-radius: 5px;
+  z-index: 10;
 }
 
-.search-box div {
+.home-search-box div {
   display: flex;
   flex-direction: column;
+
+  /* background: #000; */
 
   justify-content: flex-start;
   align-items: flex-start;
   gap: 1rem;
 }
 
-.search-box label {
+.home-search-box label {
   font-size: 1.6rem;
   color: var(--white-color);
   font-weight: 400;
 }
 
-.search-box select,
-.search-box input {
+.home-search-box select,
+.home-search-box input {
   /* width: 30rem; */
   height: 4rem;
   padding: 1rem;
@@ -245,8 +251,8 @@ body {
   outline: none;
   font-size: 1.6rem;
 }
-.search-box select::placeholder,
-.search-box input::placeholder {
+.home-search-box select::placeholder,
+.home-search-box input::placeholder {
   color: var(--primary-color);
   font-size: 1.6rem;
   font-weight: 400;
@@ -487,6 +493,7 @@ h3 {
   padding: 0 2rem;
 }
 .popular-tour-card {
+  max-width: 35rem;
   background-color: var(--white-color-3);
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);

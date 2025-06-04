@@ -13,50 +13,9 @@
     <div class="search-image-box">
       {{! <img src="/static/pics/hero-image.jpg" alt="Travel Image" class="hero-image" /> }}
     </div>
-    <form class="search-form" method="get">
-      <div>
-        <label for="Destination">Destination</label>
-        <input type="text" name="destination" placeholder="Search destination" value="{{filter.destination}}">
-      </div>
-      <div>
-        <label for="">Duration</label>
-        <select name="days" value="{{filter.days}}">
-
-          <option value="3"> 1-3 Days </option>
-          <option value="5"> 3-5 Days </option>
-          <option value="15"> 5-15 Days </option>
-          <option value="more"> 15 or more Days </option>
-
-          {{! <option value="2">2</option> }}
-        </select>
-      </div>
-      <div>
-        <label for="">Travel Type</label>
-        <select name="type" >
-           
-          <option value=""> --- </option>
-          <option value="solo" {{#if (eq filter.type "solo") }} selected="true"  {{/if}}> solo  </option>
-          <option value="romantic" {{#if (eq filter.type "romantic")}} selected {{/if}} > romantic </option>
-          <option value="adventure"   {{#if (eq filter.type "adventure")}} selected {{/if}} > adventure </option>
-          <option value="group"  {{#if (eq filter.type "group")}} selected {{/if}} > group </option>
-          <option value="day long"  {{#if (eq filter.type "day long")}} selected {{/if}} > day long </option>
-            
-        </select>
-      </div>
-      <div>
-        <label for="">Travelers</label>
-        <select >
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="more">6+</option>
-        </select>
-      </div>
-      <button type="submit" class="btn btn-submit">Find Availabilty</button>
-    </form>
+     <form  class="search-form" method="get">
+      {{>form}}
+     </form>
 
   </div>
 </section>
