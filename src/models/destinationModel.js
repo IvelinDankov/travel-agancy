@@ -22,6 +22,12 @@ const DestinationsSchema = new Schema({
   type: {
     type: String,
   },
+  city: {
+    type: String,
+  },
+  price: {
+    type: Number,
+  },
 });
 
 const Destination = model("Destination", DestinationsSchema);

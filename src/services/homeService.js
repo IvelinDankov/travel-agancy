@@ -5,8 +5,8 @@ import Team from "../models/team.js";
 import Testimonials from "../models/testimonials.js";
 
 const homeService = {
-  async getAll() {
-    return await Destination.find({}).lean();
+  getAll() {
+    return Destination.find({});
   },
   async topDestinations() {
     let destinations = await Destination.find({

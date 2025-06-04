@@ -1,5 +1,5 @@
-<section class="hero-section">
-  <div class="hero-overlay">
+<section class="hero-section search-section">
+  <div class="search-overlay">
     {{! <h1 class="hero-title">
       Discover the World,
       <br />
@@ -10,10 +10,10 @@
       <a href="/contact" class="btn hero-btn">Contact Us</a>
       <a href="/destination" class="btn hero-btn-secondary">Get Quote</a>
     </div> }}
-    <div class="hero-image-box">
+    <div class="search-image-box">
       {{! <img src="/static/pics/hero-image.jpg" alt="Travel Image" class="hero-image" /> }}
     </div>
-    <form class="search-box" method="post">
+    <form class="search-form" method="post">
       <div>
         <label for="Destination">Destination</label>
         <select name="dest-title">
@@ -65,14 +65,14 @@
 
 <section class="section-populartour">
   <div class="container popular-tour-container">
-    <span class="subtext">popular tour</span>
+    {{! <span class="subtext">popular tour</span>
     <h2 class="heading-2">See Destinations You’ll
       <br />
       Love To Visit</h2>
     <p class="popular-tour-subtext">
       A Guide to Stunning Places Around the World That Promise Memorable
       Journeys and Incredible Views
-    </p>
+    </p> }}
     <nav>
       <ul class="popular-tour-nav-list">
         <li class="popular-tour-nav-item">
@@ -97,7 +97,6 @@
     <div class="popular-tour-grid">
 
       {{#each destinations}}
-
         <div class="popular-tour-card" data-type="{{type}}">
           <img src="{{imageUrl}}" alt="{{title}}" class="popular-tour-image" />
           <ion-icon name="heart-outline"></ion-icon>
@@ -114,11 +113,10 @@
             ({{rating}})
           </p>
           <div class="pupular-tour-cta">
-            <p class="popular-tour-price"> {{price}}€ </p>
+            <p class="popular-tour-price"> {{price}} € </p>
             <button class="btn btn-submit">Book Trip</button>
           </div>
         </div>
-
       {{/each}}
 
     </div>
