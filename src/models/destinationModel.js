@@ -9,6 +9,14 @@ const DestinationsSchema = new Schema({
     type: String,
     required: true,
   },
+  imageTwo: {
+    type: String,
+    required: true,
+  },
+  imageThree: {
+    type: String,
+    required: true,
+  },
   rating: {
     type: Number,
   },

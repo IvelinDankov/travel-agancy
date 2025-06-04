@@ -13,7 +13,6 @@ const homeService = {
         title: { $regex: filter.destination, $options: "i" },
       });
     }
-   
 
     if (filter.type) {
       result = result.find({ type: filter.type });
@@ -32,6 +31,7 @@ const homeService = {
 
     return destinations;
   },
+
   async create() {
     return await Destination.create({
       title: "Reykjavik, Iceland",
@@ -64,8 +64,8 @@ const homeService = {
     return Destination.findById(destinationId);
   },
 
-  async getTendingDestinations() {
-    return await Destination.find({ reviews: { $gt: 250 } }).lean();
+  getTendingDestinations() {
+    return Destination.find({ reviews: { $gt: 250 } });
   },
 
   async getTeam() {

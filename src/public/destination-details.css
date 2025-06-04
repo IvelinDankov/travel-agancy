@@ -303,6 +303,8 @@
 
 .tending-destination-list {
   display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .tending-destination-item {

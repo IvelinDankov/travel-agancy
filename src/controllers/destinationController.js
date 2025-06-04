@@ -12,7 +12,9 @@ destinationController.get("/:id/destination-details", async (req, res) => {
 
   const destination = await homeService.getOne(destinationId);
 
-  res.render("destination-details", { destination });
+  const destinations = await homeService.getTendingDestinations();
+
+  res.render("destination-details", { destination, destinations });
 });
 
 destinationController.get("/search", async (req, res) => {
