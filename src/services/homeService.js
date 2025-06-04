@@ -10,8 +10,13 @@ const homeService = {
 
     if (filter.destination) {
       result = result.find({
-        city: { $regex: filter.destination, $options: "i" },
+        title: { $regex: filter.destination, $options: "i" },
       });
+    }
+   
+
+    if (filter.type) {
+      result = result.find({ type: filter.type });
     }
 
     return result;

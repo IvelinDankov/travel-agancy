@@ -235,7 +235,8 @@ body {
   font-weight: 400;
 }
 
-.search-box select {
+.search-box select,
+.search-box input {
   /* width: 30rem; */
   height: 4rem;
   padding: 1rem;
@@ -244,7 +245,8 @@ body {
   outline: none;
   font-size: 1.6rem;
 }
-.search-box select::placeholder {
+.search-box select::placeholder,
+.search-box input::placeholder {
   color: var(--primary-color);
   font-size: 1.6rem;
   font-weight: 400;

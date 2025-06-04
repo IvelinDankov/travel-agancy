@@ -15,6 +15,9 @@ function setHbs(app) {
             return "⭐".repeat(roundedRating);
           }
         },
+        eq: function (a, b) {
+          return a === b;
+        },
       },
       runtimeOptions: {
         allowProtoMethodsByDefault: true,

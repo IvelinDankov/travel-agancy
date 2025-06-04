@@ -16,11 +16,11 @@
     <form class="search-form" method="get">
       <div>
         <label for="Destination">Destination</label>
-        <input type="text" name="destination" placeholder="search destination" value="{{filter.destination}}">
+        <input type="text" name="destination" placeholder="Search destination" value="{{filter.destination}}">
       </div>
       <div>
         <label for="">Duration</label>
-        <select>
+        <select name="days" value="{{filter.days}}">
 
           <option value="3"> 1-3 Days </option>
           <option value="5"> 3-5 Days </option>
@@ -32,11 +32,15 @@
       </div>
       <div>
         <label for="">Travel Type</label>
-        <select >
-
-          <option value=" {{_id}} "> {{type}} </option>
-
-          <option value="Viena">Viena</option>
+        <select name="type" >
+           
+          <option value=""> --- </option>
+          <option value="solo" {{#if (eq filter.type "solo") }} selected="true"  {{/if}}> solo  </option>
+          <option value="romantic" {{#if (eq filter.type "romantic")}} selected {{/if}} > romantic </option>
+          <option value="adventure"   {{#if (eq filter.type "adventure")}} selected {{/if}} > adventure </option>
+          <option value="group"  {{#if (eq filter.type "group")}} selected {{/if}} > group </option>
+          <option value="day long"  {{#if (eq filter.type "day long")}} selected {{/if}} > day long </option>
+            
         </select>
       </div>
       <div>
@@ -67,7 +71,7 @@
       A Guide to Stunning Places Around the World That Promise Memorable
       Journeys and Incredible Views
     </p> }}
-    <nav>
+    {{!-- <nav>
       <ul class="popular-tour-nav-list">
         <li class="popular-tour-nav-item">
           <button class="popular-tour-nav-link active" data-type="all">Show All</button>
@@ -87,7 +91,7 @@
           <button class="popular-tour-nav-link" data-type="solo">Solo Tour</button>
         </li>
       </ul>
-    </nav>
+    </nav> --}}
     <div class="popular-tour-grid">
 
       {{#each destinations}}
