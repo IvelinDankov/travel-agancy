@@ -5,8 +5,16 @@ import Team from "../models/team.js";
 import Testimonials from "../models/testimonials.js";
 
 const homeService = {
-  getAll() {
-    return Destination.find({});
+  getAll(filter = {}) {
+    let result = Destination.find();
+
+    if (filter.destination) {
+      result = result.find({
+        city: { $regex: filter.destination, $options: "i" },
+      });
+    }
+
+    return result;
   },
   async topDestinations() {
     let destinations = await Destination.find({

@@ -13,20 +13,14 @@
     <div class="search-image-box">
       {{! <img src="/static/pics/hero-image.jpg" alt="Travel Image" class="hero-image" /> }}
     </div>
-    <form class="search-form" method="post">
+    <form class="search-form" method="get">
       <div>
         <label for="Destination">Destination</label>
-        <select name="dest-title">
-          <option value="----"> ------- </option>
-          {{#each destinations}}
-            <option value="{{_id}}"> {{title}} </option>
-          {{/each}}
-          {{! <option value="Viena">Viena</option> }}
-        </select>
+        <input type="text" name="destination" placeholder="search destination" value="{{filter.destination}}">
       </div>
       <div>
         <label for="">Duration</label>
-        <select name="days">
+        <select>
 
           <option value="3"> 1-3 Days </option>
           <option value="5"> 3-5 Days </option>
@@ -38,7 +32,7 @@
       </div>
       <div>
         <label for="">Travel Type</label>
-        <select name="type">
+        <select >
 
           <option value=" {{_id}} "> {{type}} </option>
 
@@ -47,7 +41,7 @@
       </div>
       <div>
         <label for="">Travelers</label>
-        <select name="travalers">
+        <select >
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -97,26 +91,7 @@
     <div class="popular-tour-grid">
 
       {{#each destinations}}
-        <div class="popular-tour-card" data-type="{{type}}">
-          <img src="{{imageUrl}}" alt="{{title}}" class="popular-tour-image" />
-          <ion-icon name="heart-outline"></ion-icon>
-          <h4 class="popular-tour-city"><ion-icon
-              name="locate-outline"
-            ></ion-icon>
-            {{city}}
-          </h4>
-          <h3 class="popular-tour-title"> {{title}} </h3>
-          <p class="rating">
-
-            {{starRating rating}}
-
-            ({{rating}})
-          </p>
-          <div class="pupular-tour-cta">
-            <p class="popular-tour-price"> {{price}} € </p>
-            <button class="btn btn-submit">Book Trip</button>
-          </div>
-        </div>
+        {{>dest}}
       {{/each}}
 
     </div>

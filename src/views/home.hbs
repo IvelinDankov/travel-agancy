@@ -220,22 +220,7 @@
 
       {{#each destinations}}
 
-      <div class="popular-tour-card" data-type="{{type}}">
-        <img src="{{imageUrl}}" alt="{{title}}" class="popular-tour-image" />
-        <ion-icon name="heart-outline"></ion-icon>
-        <h4 class="popular-tour-city"><ion-icon name="locate-outline"></ion-icon> {{city}} </h4>
-        <h3 class="popular-tour-title"> {{title}} </h3>
-        <p class="rating">
-          
-          {{starRating rating}}
-          
-          ({{rating}})
-        </p>
-        <div class="pupular-tour-cta">
-          <p class="popular-tour-price"> {{price}}€ </p>
-          <button class="btn btn-submit">Book Trip</button>
-        </div>
-      </div>
+      {{>dest}}
      
 
       {{/each}}

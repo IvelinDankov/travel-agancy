@@ -16,9 +16,10 @@ destinationController.get("/:id/destination-details", async (req, res) => {
 });
 
 destinationController.get("/search", async (req, res) => {
-  const destinations = await homeService.getAll();
+  const filter = req.query;
+  const destinations = await homeService.getAll(filter);
 
-  res.render("search", { destinations });
+  res.render("search", { destinations, filter });
 });
 
 export default destinationController;
