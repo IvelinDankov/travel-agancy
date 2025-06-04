@@ -53,7 +53,12 @@
   align-self: end;
   color: var(--white-color);
   padding: 1.25rem 3rem;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  vertical-align: center;
+
   border-radius: 5px;
   font-size: 1.3rem;
   font-weight: 500;

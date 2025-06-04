@@ -4,8 +4,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 45rem;
-  background: url("/blog-images/1815.jpg");
+  height: 25rem;
+  background: url("/static/blog-images/1815.jpg");
   color: var(--white-color);
 }
 
@@ -51,7 +51,7 @@
 .get-to-know-container {
   display: flex;
   gap: 10rem;
-  padding-top: 20rem;
+  padding-top: 10rem;
 }
 .get-to-know-info {
   width: 66rem;

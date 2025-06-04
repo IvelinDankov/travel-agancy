@@ -45,7 +45,7 @@ body {
 .container {
   max-width: 129.6rem;
   margin: 0 auto;
-  padding: 8rem 0;
+  padding: 6rem 0;
 }
 
 .header {
@@ -312,6 +312,11 @@ body {
 
 .get-to-know-text {
   margin-bottom: 1rem;
+}
+
+#btn-getToKnow {
+  justify-content: start;
+  width: fit-content;
 }
 
 .get-to-know-info-empty {

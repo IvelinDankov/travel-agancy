@@ -40,7 +40,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 45rem;
+  height: 25rem;
   background: url("./destination-images/1815.jpg");
   color: var(--white-color);
 }
